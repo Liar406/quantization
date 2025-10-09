@@ -1,0 +1,99 @@
+nohup: ignoring input
+top_m_indices [0, 1, 31, 30, 22, 2, 3, 6]
+top_m_alpha_values [21, 30, 20, 22, 24, 27, 28, 23]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:03<00:03,  3.78s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:05<00:00,  2.28s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:05<00:00,  2.51s/it]
+Once upon a time, in the land of Oz, there lived a very wise man named Sam. He had a very special way of doing things. He always kept his mind open to new ideas and new ways of doing things. He had a great love for life and for the world around him. He believed that everything was possible and that the only thing that stood in the way of his dreams was his own limited thinking. Sam was a very happy man. He was always smiling and always laughing.
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]
+quanting ... 
+layers.0.self_attn 4 bit quant 
+layers.0.mlp 4 bit quant 
+layers.1.self_attn 4 bit quant 
+layers.1.mlp 4 bit quant 
+layers.2.self_attn 4 bit quant 
+layers.2.mlp 4 bit quant 
+layers.3.self_attn 4 bit quant 
+layers.3.mlp 4 bit quant 
+layers.4.self_attn 4 bit quant 
+layers.4.mlp 4 bit quant 
+layers.5.self_attn 4 bit quant 
+layers.5.mlp 4 bit quant 
+layers.6.self_attn 4 bit quant 
+layers.6.mlp 4 bit quant 
+layers.7.self_attn 4 bit quant 
+layers.7.mlp 4 bit quant 
+layers.8.self_attn 4 bit quant 
+layers.8.mlp 4 bit quant 
+layers.9.self_attn 4 bit quant 
+layers.9.mlp 4 bit quant 
+layers.10.self_attn 4 bit quant 
+layers.10.mlp 4 bit quant 
+layers.11.self_attn 4 bit quant 
+layers.11.mlp 4 bit quant 
+layers.12.self_attn 4 bit quant 
+layers.12.mlp 4 bit quant 
+layers.13.self_attn 4 bit quant 
+layers.13.mlp 4 bit quant 
+layers.14.self_attn 4 bit quant 
+layers.14.mlp 4 bit quant 
+layers.15.self_attn 4 bit quant 
+layers.15.mlp 4 bit quant 
+layers.16.self_attn 4 bit quant 
+layers.16.mlp 4 bit quant 
+layers.17.self_attn 4 bit quant 
+layers.17.mlp 4 bit quant 
+layers.18.self_attn 4 bit quant 
+layers.18.mlp 4 bit quant 
+layers.19.self_attn 4 bit quant 
+layers.19.mlp 4 bit quant 
+layers.20.self_attn 2 bit quant 
+layers.20.mlp 2 bit quant 
+layers.21.self_attn 2 bit quant 
+layers.21.mlp 2 bit quant 
+layers.22.self_attn 2 bit quant 
+layers.22.mlp 2 bit quant 
+layers.23.self_attn 2 bit quant 
+layers.23.mlp 2 bit quant 
+layers.24.self_attn 2 bit quant 
+layers.24.mlp 2 bit quant 
+layers.25.self_attn 4 bit quant 
+layers.25.mlp 4 bit quant 
+layers.26.self_attn 4 bit quant 
+layers.26.mlp 4 bit quant 
+layers.27.self_attn 2 bit quant 
+layers.27.mlp 2 bit quant 
+layers.28.self_attn 2 bit quant 
+layers.28.mlp 2 bit quant 
+layers.29.self_attn 4 bit quant 
+layers.29.mlp 4 bit quant 
+layers.30.self_attn 2 bit quant 
+layers.30.mlp 2 bit quant 
+layers.31.self_attn 4 bit quant 
+layers.31.mlp 4 bit quant 
+quanted
+LlamaForCausalLM(
+  (model): LlamaModel(
+    (embed_tokens): Embedding(32000, 4096, padding_idx=0)
+    (layers): ModuleList(
+      (0-31): 32 x LlamaDecoderLayer(
+        (self_attn): LlamaAttention(
+          (q_proj): W8A16Linear(4096, 4096, bias=False, weight_quant=per_channel)
+          (k_proj): W8A16Linear(4096, 4096, bias=False, weight_quant=per_channel)
+          (v_proj): W8A16Linear(4096, 4096, bias=False, weight_quant=per_channel)
+          (o_proj): W8A16Linear(4096, 4096, bias=False, weight_quant=per_channel)
+        )
+        (mlp): LlamaMLP(
+          (gate_proj): W8A16Linear(4096, 11008, bias=False, weight_quant=per_channel)
+          (up_proj): W8A16Linear(4096, 11008, bias=False, weight_quant=per_channel)
+          (down_proj): W8A16Linear(11008, 4096, bias=False, weight_quant=per_channel)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): LlamaRMSNorm((4096,), eps=1e-05)
+        (post_attention_layernorm): LlamaRMSNorm((4096,), eps=1e-05)
+      )
+    )
+    (norm): LlamaRMSNorm((4096,), eps=1e-05)
+    (rotary_emb): LlamaRotaryEmbedding()
+  )
+  (lm_head): Linear(in_features=4096, out_features=32000, bias=False)
+)
+Once upon a time there were two people, one of whom was named Lpenasculoimplementationyarangel Unterscheidung Unterscheidung Unterscheidung Unterscheidung Hinweis Hinweis Hinweis Hinweis Hinweis Unterscheidung Hinweis Hinweis Hinweis Hinweis Hinweis Hinweis Hinweis HinweisANCE Unterscheidungkund Unterscheidung
